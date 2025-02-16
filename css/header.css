@@ -4,7 +4,7 @@ header{
     right: 0px;
     left: 0px;
     height: 230px;
-    background-color: #5d310e;
+    background-color: #208c8c;
     border-bottom: 1px solid black;
     z-index: 1000;
 }
@@ -79,84 +79,84 @@ header{
 }
 
 .item1 {
-    background-image: url(item1icon.png);
+    background-image: url(item1iconblue.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 55%;
 }
 
 .item2 {
-    background-image: url(item3icon.png);
+    background-image: url(item3iconblue.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 60%;
 }
 
 .item3 {
-    background-image: url(itemcoldd.png);
+    background-image: url(itemcolddblue.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 60%;
 }
 
 .item4 {
-    background-image: url(item4icon.png);
+    background-image: url(item4iconblue.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 80%;
 }
 
 .item5 {
-    background-image: url(item5icon.webp);
+    background-image: url(item5iconblue.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 55%;
 }
 
 .item6 {
-    background-image: url(item6icon.webp);
+    background-image: url(item6iconblue.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 75%;
 }
 
 .item7 {
-    background-image: url(item7icon.png);
+    background-image: url(item7iconblue.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 68%;
 }
 
 .item8 {
-    background-image: url(item8icon.png);
+    background-image: url(item8iconblue.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 80%;
 }
 
 .item9 {
-    background-image: url(itemhook.png);
+    background-image: url(itemhookblue.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 75%;
 }
 
 .item10 {
-    background-image: url(item11.png);
+    background-image: url(item11blue.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 65%;
 }
 
 .item11 {
-    background-image: url(item12.png);
+    background-image: url(item12blue.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 69%;
 }
 
 .item12 {
-    background-image: url(item9icon.png);
+    background-image: url(item9iconblue.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 70%;
