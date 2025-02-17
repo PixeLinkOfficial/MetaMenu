@@ -456,6 +456,29 @@ document.querySelectorAll('.js-add').forEach((button)=>{
 });
 
 //
+let storedDeviceId = localStorage.getItem("device_id");
+
+if (!storedDeviceId) {
+    storedDeviceId = generateUUID();
+    localStorage.setItem("device_id", storedDeviceId);
+}
+
+// Simulate sending data to the server (Replace with actual API call)
+fetch("https://yourserver.com/check-device", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ device_id: storedDeviceId, user_id: "USER_IDENTIFIER" }) // Replace with actual user data
+})
+.then(response => response.json())
+.then(data => {
+    if (data.isNewDevice) {
+        localStorage.clear(); // Clear if new device is detected
+        localStorage.setItem("device_id", storedDeviceId); // Save new device ID
+    }
+})
+.catch(error => console.error("Error:", error));
 
 //end of 1
 // Get references to the elements
