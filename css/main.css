@@ -249,7 +249,7 @@ height: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr;
     width: 100%;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 .dmdiv3 .dmdiv3img{
     width: 100%;
@@ -378,4 +378,31 @@ height: 100%;
     width: 105%;
     padding: 0 0 50px 0;
 }
+}
+
+.abt{
+    
+    padding-bottom: 200px;
+}
+
+.abt-logo{
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+.abt-img{
+    width: 100px;
+}
+.abt-soc{
+    display: flex;
+    margin: 0 20% 0 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+.abt-img12{
+    width: 45px;
+    opacity: 0.7;
+}
+.abt-img1{
+    width: 35px;
+    opacity: 0.7;
 }
