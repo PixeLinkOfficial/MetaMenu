@@ -400,13 +400,17 @@ height: 100%;
 }
 .abt-img12{
     width: 55px;
-    opacity: 0.6;
+    opacity: 0.45;
 }
 .abt-img13{
     width: 45px;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 .abt-img1{
     width: 45px;
-    opacity: 0.6;
+    opacity: 0.5;
+}
+.abt-img14{
+    width: 45px;
+    opacity: 0.4;
 }
