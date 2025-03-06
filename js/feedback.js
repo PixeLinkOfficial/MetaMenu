@@ -20,6 +20,7 @@ body.addEventListener('click',()=>{
 let butkur =document.querySelector('.kurdish');
 
 butkur.addEventListener('click',()=>{
+    localStorage.setItem("lan","kur");
     document.querySelector('.h31').innerHTML="هەلسەنگاندن";
     document.querySelector('.p21').innerHTML="هەلسەنگاندنا کارمەندان";
     document.querySelector('.p2').innerHTML="هەلسەنگاندنا خزمەتێ";
@@ -42,6 +43,7 @@ butkur.addEventListener('click',()=>{
 let butara =document.querySelector('.arabic');
 
 butara.addEventListener('click',()=>{
+    localStorage.setItem("lan","arb");
     document.querySelector('.h31').innerHTML="تقييم";
     document.querySelector('.p21').innerHTML="تقييم الموظفين";
     document.querySelector('.p2').innerHTML="تقييم الخدمة";
@@ -64,6 +66,7 @@ butara.addEventListener('click',()=>{
 let buteng =document.querySelector('.English');
 
 buteng.addEventListener('click',()=>{
+    localStorage.setItem("lan","eng");
     document.querySelector('.h31').innerHTML="Feedback";
     document.querySelector('.p21').innerHTML="Staff";
     document.querySelector('.p2').innerHTML="Service";
@@ -82,6 +85,15 @@ buteng.addEventListener('click',()=>{
     document.querySelector('.stars-div3').style.flexDirection='row';
     document.querySelector('.stars-div4').style.flexDirection='row';
 });
+
+function htlan(){
+    if(localStorage.getItem('lan')=="arb")
+      butara.click();
+    else if(localStorage.getItem('lan')=="kur")
+      butkur.click()
+    }
+    htlan();
+    
 
 //
 document.querySelector('.star-but1').addEventListener('click',()=>{
@@ -252,3 +264,4 @@ const noSubmitButtons = document.querySelectorAll('.no-submit');
         console.log('Button clicked, but form not submitted!');
       });
     });
+
