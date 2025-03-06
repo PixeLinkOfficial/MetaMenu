@@ -232,10 +232,14 @@ body {
 }
 
 /* Applying slide-up effect to header and items */
-
+header {
+    animation: slideUp 1s ease-out forwards; /* Ensure it only runs once */
+}
 
 /* Only animate the .items once */
-
+.items {
+    animation: slideUp 1s ease-out forwards; /* Applying slide-up once */
+}
 
 /* Apply staggered animations to individual items */
 .item {
