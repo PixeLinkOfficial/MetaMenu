@@ -31,7 +31,7 @@ butkur.addEventListener('click',()=>{
     element.style.marginRight='15px';   // Align items to the end (works if flex container)
   });
 
-  
+  localStorage.setItem("lan","kur");
   document.querySelector('.div1p1').innerHTML="ڤەخوارنێن گەرم";
   document.querySelector('.pburg1').innerHTML="چا";
   document.querySelector('.pburg2').innerHTML="كەپەچينو";
@@ -156,6 +156,7 @@ butara.addEventListener('click', () => {
     element.style.marginRight='15px';   // Align items to the end (works if flex container)
   });
 
+  localStorage.setItem("lan","arb");
   document.querySelector('.div1p1').innerHTML="المشروبات الساخنة";
   document.querySelector('.pburg1').innerHTML="شاي";
   document.querySelector('.pburg2').innerHTML="كباجينو";
@@ -257,6 +258,7 @@ butara.addEventListener('click', () => {
 let buteng =document.querySelector('.English');
 
 buteng.addEventListener('click',()=>{
+  
   document.querySelector('body').style.fontFamily= "'Roboto', serif";
   document.querySelector('header').style.direction='ltr';
   const elements = document.querySelectorAll('.bmm2');
@@ -271,6 +273,7 @@ buteng.addEventListener('click',()=>{
       button.style.marginLeft= '7%';
     }
   });
+  localStorage.setItem("lan","eng");
   window.location.reload(true);
 });
 
@@ -457,6 +460,15 @@ document.querySelectorAll('.js-add').forEach((button)=>{
 
 //
 
+function htlan(){
+  if(localStorage.getItem('lan')=="arb")
+    butara.click();
+  else if(localStorage.getItem('lan')=="kur")
+    butkur.click()
+  }
+  htlan();
+  
+
 //end of 1
 // Get references to the elements
 // Loop through all pairs of vertical and horizontal elements
@@ -499,27 +511,3 @@ document.querySelectorAll('.js-add').forEach((button)=>{
   checkScrollPosition();
 }
 //
-
-let storedDeviceId = localStorage.getItem("device_id");
-
-if (!storedDeviceId) {
-    storedDeviceId = generateUUID();
-    localStorage.setItem("device_id", storedDeviceId);
-}
-
-// Simulate sending data to the server (Replace with actual API call)
-fetch("https://yourserver.com/check-device", {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json"
-    },
-    body: JSON.stringify({ device_id: storedDeviceId, user_id: "USER_IDENTIFIER" }) // Replace with actual user data
-})
-.then(response => response.json())
-.then(data => {
-    if (data.isNewDevice) {
-        localStorage.clear(); // Clear if new device is detected
-        localStorage.setItem("device_id", storedDeviceId); // Save new device ID
-    }
-})
-.catch(error => console.error("Error:", error));
