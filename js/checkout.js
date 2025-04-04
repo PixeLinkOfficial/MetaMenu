@@ -357,6 +357,21 @@ let dataCart=[
         id:71,
         name:'1 Hour Playstation',
         price:8000
+    },
+    {
+        id:997,
+        name:'1 ball icecream',
+        price:1000
+    },
+    {
+        id:998,
+        name:'2 ball icecream',
+        price:2000
+    },
+    {
+        id:999,
+        name:'Ice cream',
+        price:4000
     }
   ];
   //
