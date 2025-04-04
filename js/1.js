@@ -125,6 +125,11 @@ butkur.addEventListener('click',()=>{
   document.querySelector('.div1p12').innerHTML="بليستيشن";
   document.querySelector('.k47').innerHTML="ئيك ساعه";
 
+  document.querySelector('.div1p999').innerHTML="ايس كريم";
+  document.querySelector('.m1').innerHTML="(1) ايس كريم ئيك طبه";
+  document.querySelector('.m2').innerHTML="(2) ايس كريم دوو طبه";
+  document.querySelector('.m3').innerHTML="ايس كريم";
+
 
 });
 
@@ -249,6 +254,11 @@ butara.addEventListener('click', () => {
   
   document.querySelector('.div1p12').innerHTML="بليستيشن";
   document.querySelector('.k47').innerHTML="ساعة واحدة";
+
+  document.querySelector('.div1p999').innerHTML="ايس كريم";
+  document.querySelector('.m1').innerHTML="(1) كرة ايس كريم واحدة";
+  document.querySelector('.m2').innerHTML="كرتين ايس كريم (2)";
+  document.querySelector('.m3').innerHTML="ايس كريم";
   
 
   
@@ -365,7 +375,8 @@ const scrollButtons = [
   { button: '.item9', target: 'sc9' },
   { button: '.item10', target: 'sc10' },
   { button: '.item11', target: 'sc11' },
-  { button: '.item12', target: 'sc12' }
+  { button: '.item12', target: 'sc12' },
+  { button: '.item13', target: 'sc13' }
 ];
 
 // Set up event listeners for each scroll button
@@ -472,7 +483,7 @@ function htlan(){
 //end of 1
 // Get references to the elements
 // Loop through all pairs of vertical and horizontal elements
-  for (let i = 1; i <= 12; i++) {
+  for (let i = 1; i <= 13; i++) {
   const verticalElement = document.querySelector(`.ver${i}`);  // Select the vertical element (ver1, ver2, ..., ver9)
   const horizontalContainer = document.querySelector('.items');  // The container for horizontal scrolling
   const horizontalTarget = document.querySelector(`.hor${i}`);  // Select the horizontal target (hor1, hor2, ..., hor9)
