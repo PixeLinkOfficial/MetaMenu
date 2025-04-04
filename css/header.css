@@ -134,28 +134,35 @@ header{
     background-size: 80%;
 }
 
-.item9 {
+.item9{
+    background-image: url(itemicecream.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 55%;
+}
+
+.item10 {
     background-image: url(itemhookblue.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 75%;
 }
 
-.item10 {
+.item11 {
     background-image: url(item11blue.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 65%;
 }
 
-.item11 {
+.item12 {
     background-image: url(item12blue.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 69%;
 }
 
-.item12 {
+.item13 {
     background-image: url(item9iconblue.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -177,7 +184,7 @@ header{
 .rldiv{
     background-color: black;
     position: absolute;
-    bottom: -90px;
+    bottom: -95px;
     top: 30px;
     width: 75px;
     right: 30%;
